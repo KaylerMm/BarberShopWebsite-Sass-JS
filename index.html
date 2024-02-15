@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Barber Shop</title>
+</head>
+<body>
+    <div class="bg-home">
+        <header>
+            <nav class="header-content container">
+                <div class="header-icons" data-aos="fade-down">
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-2x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-2x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-tiktok fa-2x"></i>
+                    </a>
+                </div>
+
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/logo.svg" alt="Barber Shop" data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500">
+                </div>
+
+                <button data-aos="fade-down" href="https://api.whatsapp.com/send?phone=551100000000&text=Hi,%20I%27d%20like%20to%20make%20an%20appointment!" class="header-button">Schedule an Appointment</button>
+            </nav>
+
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+                <h1>Style is a reflex of your attitude and personality.</h1>
+                <p>Business hours: 9am to 7pm</p>
+                <a href="https://api.whatsapp.com/send?phone=551100000000&text=Hi,%20I%27d%20like%20to%20make%20an%20appointment!" class="button-contact" target="_blank">Schedule Appointment</a>
+            </main>
+        </header>
+
+    </div>
+
+    <section class="about">
+        <div class="container about-content">
+            <div data-aos="zoom-in" data-aos-delay="150">
+                <img src="assets/images.svg" alt="">
+            </div>
+
+            <div class="about-description" data-aos="zoom-out-left" data-aos-delay="250">
+                <h2>About</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus sunt vitae eaque!</p>
+                <p>Business hours: <strong>9am</strong> to <strong>7pm</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-content container">
+            <h2>Services</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis soluta iure adipisci iusto porro non aperiam pariatur accusantium cupiditate repellat!</p>
+        </div>
+
+        <section class="haircuts">
+            <div class="regular-haircut"  data-aos="fade-up" data-aos-delay="150">
+                <img src="assets/corte1.png" alt="Regular haircut">
+                <div class="haircut-info">
+                    <strong>Regular haircut</strong>
+                    <button>$30,00</button>
+                </div>
+            </div>
+
+            <div class="shave"  data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/corte2.png" alt="Regular haircut">
+                <div class="haircut-info">
+                    <strong>Shave</strong>
+                    <button>$25,00</button>
+                </div>
+            </div>
+
+            <div class="hair-beard-pack"  data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/corte3.png" alt="Regular haircut">
+                <div class="haircut-info">
+                    <strong>Hair & Beard</strong>
+                    <button>$50,00</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div class="services">
+        <h2>Come visit us!</h2>
+    </div>
+
+    <iframe width="100%"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.1647024856834!2d-118.4990703339484!3d34.008433746521334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4d74d5ea79b%3A0xcd9a111aced18f4d!2sSanta%20Monica%20Pier!5e0!3m2!1sen!2sbr!4v1707937976145!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+
+            <a href="#">
+                 <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+
+        <div>
+            <img src="assets/logo.svg" alt="Logo">
+        </div>
+
+        <p>Copyright 2024</p>
+        <p>Made with ❤️ by Kayler Moura</p>
+    </footer>
+
+    <a class="whatsapp-button"  data-aos="zoom-up" data-aos-delay="400"
+    href="https://api.whatsapp.com/send?phone=551100000000&text=Hi,%20I%27d%20like%20to%20make%20an%20appointment!" target="_blank">
+        <img src="assets/whatssapp.svg" alt="whatssapp">
+        <span class="tooltip-text">Schedule an Appointment</span>
+    </a>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

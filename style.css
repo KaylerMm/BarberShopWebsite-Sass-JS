@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+header {
+  width: 100;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+i {
+  color: #FFFFFF;
+}
+
+.header-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #D34040;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-0.5rem) scale(1.1);
+  }
+}
+.header-button {
+  border: 1px solid #FFFFFF;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: background-color 0.8s;
+}
+
+.header-button:hover {
+  border: 1px solid #D34040;
+  background-color: #D34040;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-content i {
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+  .header-logo img {
+    width: 10rem;
+    margin-top: 3rem;
+  }
+  .header-button {
+    display: none;
+  }
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bg-home {
+  position: relative;
+}
+
+.bg-home::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121E), url("/assets/bg.svg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
+}
+
+.hero {
+  color: #FFFFFF;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 59rem;
+  font-size: 3rem;
+}
+.hero p {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.button-contact {
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  background-color: #D94140;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 48rem) {
+  .hero {
+    min-width: 60vh;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 30rem) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+.about {
+  background-color: #06121E;
+  overflow: hidden;
+  color: #FFFFFF;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 1rem 4rem 1rem;
+}
+.about-content img {
+  max-width: 36rem;
+  padding: 3rem;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-description h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.about-description p {
+  margin-bottom: 1rem;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 48rem) {
+  .about-content {
+    flex-direction: column;
+  }
+}
+.services {
+  background-color: #FFFFFF;
+  color: #232224;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1rem;
+}
+
+.services-content h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services-content p {
+  line-height: 150%;
+  margin-bottom: 1rem;
+  text-align: center;
+  max-width: 48rem;
+}
+
+.haircuts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.regular-haircut, .shave, .hair-beard-pack {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+.regular-haircut img, .shave img, .hair-beard-pack img {
+  width: 100%;
+  max-width: 23rem;
+  transition: transform 0.25s;
+}
+
+.services img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.haircut-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  z-index: 99;
+}
+
+.haircut-info button {
+  color: #FFFFFF;
+  background-color: #D94140;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 0;
+  cursor: default;
+}
+
+@media screen and (max-width: 48rem) {
+  .haircuts {
+    flex-direction: column;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 0;
+  gap: 2rem;
+  color: #FFFFFF;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 0.5rem;
+  color: #FFFFFF;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1.5rem;
+  z-index: 99;
+}
+.whatsapp-button img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 7.5rem;
+  top: 0.5rem;
+  left: -9rem;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: #232224;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.whatsapp-button:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 48rem) {
+  .whatsapp-button {
+    max-width: 4rem;
+  }
+}
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #06121E;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Sora", sans-serif;
+}
+
+svg {
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
